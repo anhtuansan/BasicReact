@@ -1,0 +1,27 @@
+#test {
+  border: 2px black solid;
+  margin: 20px 0px 20px 15%;
+
+  background: #e3b247;
+}
+
+#image {
+  width: 100px;
+  height: 100px;
+  border: 2px black solid;
+}
+
+#tieuDe {
+  border: 2px black solid;
+  margin: 0px 20px 20px 18%;
+
+  background: #b4b4b4;
+  color: black;
+}
+
+#listItem {
+  display: inline-block;
+}
+#footer {
+  margin-right: -230px;
+}
