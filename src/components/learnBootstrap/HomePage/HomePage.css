@@ -20,7 +20,7 @@
 }
 
 #listItem {
-  display: inline-block;
+  margin-left: 20%;
 }
 #footer {
   margin-right: -230px;
