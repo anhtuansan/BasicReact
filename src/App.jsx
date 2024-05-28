@@ -13,9 +13,9 @@ function App() {
       {/* <ParentComponent /> */}
       {/* <Footer /> */}
 
-      {/* <HomePage /> */}
+      <HomePage />
 
-      <Test />
+      {/* <Test /> */}
     </>
   );
 }
