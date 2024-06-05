@@ -5,7 +5,7 @@ import Cars from "./Cars";
 function B5Practice() {
   return (
     <>
-{/* <Cars/> */}
+<Cars/>
    
     </>
   );
