@@ -22,7 +22,7 @@ function App() {
       {/* <HomePage /> */}
 {/* <B5/> */}
       {/* <Test /> */}
-      <B5Practice/>
+      {/* <B5Practice/> */}
       {/* <FooterB5/> */}
     </>
   );
