@@ -49,12 +49,12 @@ const products = [
     },
   ];
 function Detail() {
-    const product = products[6];
+    const product = products[5];
     console.log(product)
 
     return (
       <>
-     {/* <Card>
+     <Card>
               <CardImage
                 src={product.image}
                 alt={product.name}
@@ -67,7 +67,7 @@ function Detail() {
                 <CardText>{product.description}</CardText>
                
               </CardBody>
-            </Card> */}
+            </Card>
         <h2>Details</h2>
       </>
     );
