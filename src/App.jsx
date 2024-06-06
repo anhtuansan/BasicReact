@@ -17,6 +17,9 @@ import UserDetails from "./components/buoi6/UserDetails.jsx";
 import NavB6 from "./components/b6practice/NavB6.jsx";
 import HomeB6 from "./components/b6practice/HomeB6.jsx";
 import ProductList from "./components/b6practice/ProductList.jsx";
+import TestB6 from "./components/buoi6/TestB6.jsx";
+import Detail from "./components/b6practice/Detail.jsx";
+
 
 function App() {
   return (
@@ -27,6 +30,11 @@ function App() {
       <Routes>
         <Route path="/" element={<HomeB6 />} />
         <Route path="/productlist" element={<ProductList />} />
+        <Route path="/detail" element={<Detail />} />
+
+        {/* <Route path="/" element={<B6 />} /> */}
+        <Route path="/productlist" element={<About />} />
+        <Route path="/test" element ={<TestB6/>}/>
         <Route path="/user/:id" element={<UserDetails />} />
       </Routes>
 

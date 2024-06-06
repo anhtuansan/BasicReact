@@ -1,6 +1,7 @@
 import Container from "react-bootstrap/Container";
 import exampleImage from "../../assets/images/avatar.jpg";
- 
+import { useNavigate } from "react-router-dom";
+
 import {
   MDBContainer as Container2,
   MDBRow as Row,
@@ -51,6 +52,11 @@ const products = [
   },
 ];
 function List(){
+  const navigate = useNavigate();
+
+  function chuyenTrang() {
+    navigate("/detail");
+  }
     return (
         <>
         <div id="listItem">
@@ -69,7 +75,7 @@ function List(){
               <CardBody>
                 <CardTitle>{product.name}</CardTitle>
                 <CardText>{product.description}</CardText>
-                <Btn color="info">Detail</Btn>
+                <Btn color="info" onClick={chuyenTrang}>Detail</Btn>
               </CardBody>
             </Card>
           </Col>
