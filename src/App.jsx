@@ -14,17 +14,20 @@ import { Routes, Route } from "react-router-dom";
 import B6 from "./components/buoi6/B6.jsx";
 import About from "./components/buoi6/About.jsx";
 import UserDetails from "./components/buoi6/UserDetails.jsx";
+import NavB6 from "./components/b6practice/NavB6.jsx";
+import HomeB6 from "./components/b6practice/HomeB6.jsx";
+import ProductList from "./components/b6practice/ProductList.jsx";
 
 function App() {
   return (
     <>
-      <Nav />
-
+      <NavB6 />
+{/* <Nav/> */}
 
       <Routes>
-        <Route path="/" element={<B6 />} />
-        <Route path="/about" element={<About />} />
-        {/* <Route path="/user/:id" element={<UserDetails />} /> */}
+        <Route path="/" element={<HomeB6 />} />
+        <Route path="/productlist" element={<ProductList />} />
+        <Route path="/user/:id" element={<UserDetails />} />
       </Routes>
 
     </>
