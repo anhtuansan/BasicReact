@@ -20,24 +20,23 @@ import ProductList from "./components/b6practice/ProductList.jsx";
 import TestB6 from "./components/buoi6/TestB6.jsx";
 import Detail from "./components/b6practice/Detail.jsx";
 
-
 function App() {
   return (
     <>
-      <NavB6 />
-{/* <Nav/> */}
+      {/* <NavB6 /> */}
+      <Nav />
 
       <Routes>
-        <Route path="/" element={<HomeB6 />} />
+        {/* <Route path="/" element={<HomeB6 />} /> */}
         <Route path="/productlist" element={<ProductList />} />
         <Route path="/detail" element={<Detail />} />
 
-        {/* <Route path="/" element={<B6 />} /> */}
-        <Route path="/productlist" element={<About />} />
-        <Route path="/test" element ={<TestB6/>}/>
+        <Route path="/" element={<B6 />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/test" element={<TestB6 />} />
+
         <Route path="/user/:id" element={<UserDetails />} />
       </Routes>
-
     </>
   );
 }
