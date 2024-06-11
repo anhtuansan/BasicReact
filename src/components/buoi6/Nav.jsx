@@ -10,6 +10,9 @@ function myFunction() {
 }
 
 function Nav() {
+  const id = 1;
+  const path = "/user/" + id;
+
   return (
     <>
       <div className="topnav" id="myTopnav">
@@ -18,6 +21,10 @@ function Nav() {
         </NavLink>
         <NavLink to="/about" activeClassName="active">
           About
+        </NavLink>
+
+        <NavLink to={path} activeClassName="active">
+          UserDetail
         </NavLink>
 
         <a href="javascript:void(0);" className="icon" onClick={myFunction}>

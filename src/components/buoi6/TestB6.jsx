@@ -1,10 +1,10 @@
 // import "./Nav.css";
 
-function Test() {
+function TestB6() {
   return (
     <>
       <h2>Test</h2>
     </>
   );
 }
-export default Test;
+export default TestB6;

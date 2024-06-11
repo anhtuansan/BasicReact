@@ -1,0 +1,19 @@
+/* Card {
+  width: 30%;
+  height: auto;
+  border: 2px solid black;
+}
+
+MDBCard {
+  width: 30%;
+  height: auto;
+  border: 2px solid black;
+} */
+
+#detail {
+  width: 30%;
+  height: auto;
+  border: 2px solid black;
+  margin: 5% auto;
+  background-color: #04aa6d;
+}

@@ -11,8 +11,8 @@ import {
   MDBCardTitle as CardTitle,
   MDBCardText as CardText,
   MDBCardImage as CardImage,
-  MDBBtn as Btn
-} from 'mdb-react-ui-kit';
+  MDBBtn as Btn,
+} from "mdb-react-ui-kit";
 const products = [
   {
     id: 1,
@@ -51,39 +51,43 @@ const products = [
     image: exampleImage,
   },
 ];
-function List(){
+function List() {
   const navigate = useNavigate();
 
-  function chuyenTrang() {
-    navigate("/detail");
+  function chuyenTrang(productId) {
+    navigate(`/detail/${productId}`);
   }
-    return (
-        <>
-        <div id="listItem">
-      <Container>
-      <Row>
-        {products.map((product, index) => (
-          <Col key={product.id} sm="12" md="6" lg="3" className="mb-4">
-            <Card>
-              <CardImage
-                src={product.image}
-                alt={product.name}
-                top
-                hover
-                overlay="white-slight"
-              />
-              <CardBody>
-                <CardTitle>{product.name}</CardTitle>
-                <CardText>{product.description}</CardText>
-                <Btn color="info" onClick={chuyenTrang}>Detail</Btn>
-              </CardBody>
-            </Card>
-          </Col>
-        ))}
-      </Row>
-    </Container>
+  
+  return (
+    <>
+      <div id="listItem">
+        <Container>
+          <Row>
+            {products.map((product, index) => (
+              <Col key={product.id} sm="12" md="6" lg="3" className="mb-4">
+                <Card>
+                  <CardImage
+                    src={product.image}
+                    alt={product.name}
+                    top
+                    hover
+                    overlay="white-slight"
+                  />
+                  <CardBody>
+                    <CardTitle>{product.name}</CardTitle>
+                    <CardText>{product.description}</CardText>
+                    <Btn color="info" onClick={() => chuyenTrang(product.id)}>
+  Detail
+</Btn>
+
+                  </CardBody>
+                </Card>
+              </Col>
+            ))}
+          </Row>
+        </Container>
       </div>
-</>
-    );
+    </>
+  );
 }
 export default List;
