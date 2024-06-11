@@ -20,6 +20,7 @@ import ProductList from "./components/b6practice/ProductList.jsx";
 import TestB6 from "./components/buoi6/TestB6.jsx";
 import Detail from "./components/b6practice/Detail.jsx";
 import ProductDetail from "./components/b6practice/ProductDetails.jsx";
+import Login from "./components/b6practice/Login.jsx";
 
 function App() {
   return (
@@ -35,7 +36,7 @@ function App() {
         <Route path="/" element={<B6 />} />
         {/* <Route path="/about" element={<About />} /> */}
         <Route path="/test" element={<TestB6 />} />
-       
+        <Route path="/login" element={<Login />} />
         <Route path="/detail/:id" element={<ProductDetail />} />
         <Route path="/user/:id" element={<UserDetails />} />
       </Routes>
