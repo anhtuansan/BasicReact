@@ -54,9 +54,10 @@ const products = [
 function List() {
   const navigate = useNavigate();
 
-  function chuyenTrang() {
-    navigate("/detail");
+  function chuyenTrang(productId) {
+    navigate(`/detail/${productId}`);
   }
+  
   return (
     <>
       <div id="listItem">
@@ -76,9 +77,10 @@ function List() {
                   <CardBody>
                     <CardTitle>{product.name}</CardTitle>
                     <CardText>{product.description}</CardText>
-                    <Btn color="info" onClick={chuyenTrang}>
-                      Detail
-                    </Btn>
+                    <Btn color="info" onClick={() => chuyenTrang(product.id)}>
+  Detail
+</Btn>
+
                   </CardBody>
                 </Card>
               </Col>

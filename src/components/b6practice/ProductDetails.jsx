@@ -1,17 +1,14 @@
-import "./Detail.css";
-
-import exampleImage from "../../assets/images/avatar.jpg";
+import { useParams } from "react-router-dom";
+import Container from "react-bootstrap/Container";
 import {
-  MDBContainer as Container2,
-  MDBRow as Row,
-  MDBCol as Col,
   MDBCard as Card,
   MDBCardBody as CardBody,
   MDBCardTitle as CardTitle,
   MDBCardText as CardText,
   MDBCardImage as CardImage,
-  MDBBtn as Btn,
 } from "mdb-react-ui-kit";
+import exampleImage from "../../assets/images/avatar.jpg";
+
 const products = [
   {
     id: 1,
@@ -50,14 +47,14 @@ const products = [
     image: exampleImage,
   },
 ];
-function Detail() {
 
-  const product = products[5];
-  console.log(product);
+const ProductDetail = () => {
+  const { id } = useParams();
+  const product = products.find((product) => product.id == id); 
 
   return (
-    <>
-      <div id="detail">
+    <Container>
+      {product ? (
         <Card>
           <CardImage
             src={product.image}
@@ -71,10 +68,11 @@ function Detail() {
             <CardText>{product.description}</CardText>
           </CardBody>
         </Card>
-      </div>
-      <h2>Details</h2>
-    </>
+      ) : (
+        <p>Product not found</p>
+      )}
+    </Container>
   );
-}
-export default Detail;
+};
 
+export default ProductDetail;

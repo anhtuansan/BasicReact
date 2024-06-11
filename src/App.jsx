@@ -19,12 +19,13 @@ import HomeB6 from "./components/b6practice/HomeB6.jsx";
 import ProductList from "./components/b6practice/ProductList.jsx";
 import TestB6 from "./components/buoi6/TestB6.jsx";
 import Detail from "./components/b6practice/Detail.jsx";
+import ProductDetail from "./components/b6practice/ProductDetails.jsx";
 
 function App() {
   return (
     <>
-      {/* <NavB6 /> */}
-      <Nav />
+      <NavB6 />
+      {/* <Nav /> */}
 
       <Routes>
         {/* <Route path="/" element={<HomeB6 />} /> */}
@@ -32,9 +33,10 @@ function App() {
         <Route path="/detail" element={<Detail />} />
 
         <Route path="/" element={<B6 />} />
-        <Route path="/about" element={<About />} />
+        {/* <Route path="/about" element={<About />} /> */}
         <Route path="/test" element={<TestB6 />} />
-
+       
+        <Route path="/detail/:id" element={<ProductDetail />} />
         <Route path="/user/:id" element={<UserDetails />} />
       </Routes>
     </>
