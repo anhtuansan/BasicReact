@@ -72,6 +72,7 @@ function List() {
                     hover
                     overlay="white-slight"
                   />
+
                   <CardBody>
                     <CardTitle>{product.name}</CardTitle>
                     <CardText>{product.description}</CardText>
