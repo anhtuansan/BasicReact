@@ -23,6 +23,7 @@ import ProductDetail from "./components/b6practice/ProductDetails.jsx";
 import Login from "./components/b6practice/Login.jsx";
 import ProductManager from "./components/b9/ProductManager.jsx";
 import Edit from "./components/b9/Edit.jsx";
+import Delete from "./components/b9/Delete.jsx";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/productmanager" element={<ProductManager />} />
         <Route path="/edit/:id" element={<Edit />} />
+        <Route path="/delete/:id" element={<Delete />} />
         <Route path="/detail/:id" element={<ProductDetail />} />
         <Route path="/user/:id" element={<UserDetails />} />
       </Routes>

@@ -11,6 +11,10 @@ function ProductManager() {
     const path = "/edit/" + id;
     navigate(path);
   };
+  const handleDelete =(id) =>{
+    const path ="/delete/" + id;
+    navigate(path)
+  }
 
   useEffect(() => {
     axios
@@ -51,7 +55,7 @@ function ProductManager() {
                 >
                   Edit
                 </Button>
-                <Button variant="danger">Delete</Button>
+                <Button variant="danger" onClick={() => handleDelete(product.id)}>Delete</Button>
               </td>
             </tr>
           ))}
