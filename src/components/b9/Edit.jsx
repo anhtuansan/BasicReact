@@ -12,6 +12,7 @@ function Edit(){
       axios 
       .get(`https://63fc248e677c415873068d86.mockapi.io/product/${id}`)
       .then((response) =>{
+        const product = response.data;
         setProduct (response.data);
         setName (product.name);
         setDescription (product.description);
