@@ -29,6 +29,12 @@ function NavB6() {
       >
         Login
       </NavLink>
+      <NavLink
+        to="/productmanager"
+        className={({ isActive }) => (isActive ? "active" : "")}
+      >
+        ProductManager
+      </NavLink>
 
       <a
         href="#"
